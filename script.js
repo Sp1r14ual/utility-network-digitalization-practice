@@ -20,3 +20,7 @@ var polygon = L.polygon([
   [51.503, -0.06],
   [51.51, -0.047],
 ]).addTo(map);
+
+marker.bindPopup('<b>Hello world!</b><br>I am a popup.').openPopup();
+circle.bindPopup('I am a circle.');
+polygon.bindPopup('I am a polygon.');
