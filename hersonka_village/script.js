@@ -6,7 +6,7 @@ import street_connectors from './street_connectors.js';
 import bind_markers_to_houses from '../utils/bind_markers_to_houses.js';
 import bind_markers_to_wells from '../utils/bind_markers_to_wells.js';
 
-var map = L.map('map').setView([55.24001, 79.580035], 16);
+var map = L.map('map').setView([55.053268, 79.79988], 16);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
@@ -14,25 +14,17 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-var town = L.marker([55.24001, 79.580035]).addTo(map);
+var town = L.marker([55.053268, 79.79988]).addTo(map);
 
-var main_well_1 = L.circle([55.23781, 79.57735], {
+var main_well = L.circle([55.05413, 79.80401], {
   color: 'blue',
   fillColor: 'blue',
   fillOpacity: 0.5,
   radius: 10,
 }).addTo(map);
 
-var main_well_2 = L.circle([55.24011, 79.57825], {
-  color: 'blue',
-  fillColor: 'blue',
-  fillOpacity: 0.5,
-  radius: 10,
-}).addTo(map);
-
-town.bindPopup('д. Асенкритово').openPopup();
-main_well_1.bindPopup('Скважина');
-main_well_2.bindPopup('Скважина');
+town.bindPopup('д. Херсонка').openPopup();
+main_well.bindPopup('Скважина');
 
 var graph_coords = build_graph(streets, street_connectors, wells, houses);
 
