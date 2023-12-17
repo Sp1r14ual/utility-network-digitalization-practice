@@ -7,7 +7,7 @@ export default function (wells, map) {
         color: 'black',
         fillColor: 'yellow',
         fillOpacity: 1,
-        radius: 3,
+        radius: 2,
       })
         .bindPopup(
           'Водопроводный колодец. Подключен к домам ' +

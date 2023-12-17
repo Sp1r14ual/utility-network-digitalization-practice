@@ -7,7 +7,7 @@ export default function (houses, map) {
         color: 'green',
         fillColor: 'green',
         fillOpacity: 1,
-        radius: 3,
+        radius: 2,
       })
         .bindPopup(house.street + ', ' + house.number.toString())
         .addTo(map)

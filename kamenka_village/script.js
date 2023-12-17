@@ -1,10 +1,10 @@
-import build_graph from './build_graph.js';
+import build_graph from '../utils/build_graph.js';
 import streets from './streets.js';
 import houses from './houses.js';
 import wells from './wells.js';
 import street_connectors from './street_connectors.js';
-import bind_markers_to_houses from './bind_markers_to_houses.js';
-import bind_markers_to_wells from './bind_markers_to_wells.js';
+import bind_markers_to_houses from '../utils/bind_markers_to_houses.js';
+import bind_markers_to_wells from '../utils/bind_markers_to_wells.js';
 
 var map = L.map('map').setView([55.146327, 79.675607], 13);
 
